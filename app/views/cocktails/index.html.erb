@@ -1,0 +1,19 @@
+<div class="container m-3">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>All cocktails :</h1>
+      <% @cocktails.each do |cocktail| %>
+        <div class="card m-3" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title"> <%= link_to cocktail.name, cocktail_path(cocktail.id) %><br><br></h5>
+    </div>
+      <% end %>
+      </div>
+
+          <h2><%= link_to 'Add a new cocktail', new_cocktail_path, :class => "btn btn-primary" %></h2>
+    </div>
+  </div>
+</div>
+
+
+

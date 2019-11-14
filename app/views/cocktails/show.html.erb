@@ -1,0 +1,12 @@
+<div class="container m-3">
+  <div class="row">
+    <div class="col-sm-12">
+    <h2>Name : <%= @cocktail.name %></h2>
+
+  </div>
+  <div class="col-sm-12">
+<%= link_to 'come back to the list', cocktails_path %><br>
+<%= link_to 'delete this cocktail', cocktail_path(@cocktail), method: :delete%>
+    </div>
+  </div>
+</div>
