@@ -10,19 +10,19 @@ Cocktail.destroy_all
 Ingredient.destroy_all
 
 puts 'Create the seed'
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
-Ingredient.create(name: "rhum")
-Ingredient.create(name: "vodka")
-Ingredient.create(name: "gin")
-Ingredient.create(name: "coca")
-Ingredient.create(name: "vin")
+Ingredient.create!(name: "lemon")
+Ingredient.create!(name: "ice")
+Ingredient.create!(name: "mint leaves")
+Ingredient.create!(name: "rhum")
+Ingredient.create!(name: "vodka")
+Ingredient.create!(name: "gin")
+Ingredient.create!(name: "coca")
+Ingredient.create!(name: "vin")
 
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Gin tonic")
-Cocktail.create(name: "Whisky coca")
-Cocktail.create(name: "Calimoxo")
+Cocktail.create!(name: "Mojito")
+Cocktail.create!(name: "Gin tonic")
+Cocktail.create!(name: "Whisky coca")
+Cocktail.create!(name: "Calimoxo")
 
 
 Dose.create(description: "3cl")
