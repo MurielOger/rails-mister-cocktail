@@ -4,7 +4,9 @@
       <h2>Name : <%= @cocktail.name %></h2>
 
       <br>
-
+        <% if @cocktail.photo.attachment %>
+          <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+        <% end %>
       <ul>
       <% @cocktail.doses.each do |dose| %>
         <li><%= dose.ingredient.name %> : <%= dose.description %></li>
